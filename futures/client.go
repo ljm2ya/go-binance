@@ -441,3 +441,11 @@ func (c *Client) NewChangePositionModeService() *ChangePositionModeService {
 func (c *Client) NewGetPositionModeService() *GetPositionModeService {
 	return &GetPositionModeService{c: c}
 }
+
+func (c *Client) NewGetBalanceServiceV2() *GetBalanceServiceV2 {
+	return &GetBalanceServiceV2{c: c}
+}
+
+func (c *Client) NewGetPositionServiceV2() *GetPositionServiceV2 {
+	return &GetPositionServiceV2{c: c}
+}
